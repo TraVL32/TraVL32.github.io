@@ -3,13 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>лабораторная работа №5</title>
+    <title>Лабораторная работа 5</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background-color: var(--card-bg);
+            color: var(--primary-color);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+        .back-button:hover {
+            transform: translateX(-5px);
+            border-color: var(--primary-color);
+            color: var(--primary-hover);
+        }
+        .header h1 {
+            font-size: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <a href="lab_5_1.html">Лабораторная работа 5.1</a>
-    <a href="lab_5_2_float.html">Лабораторная работа 5.2 (float)</a>
-    <a href="lab_5_2_inline.html">Лабораторная работа 5.2 (inline)</a>
-    <a href="lab_5_2_flex.html">Лабораторная работа 5.2 (flex)</a>
-    <a href="lab_5_2_grid.html">Лабораторная работа 5.2 (grid)</a>
+    <div class="container">
+        <a href="../index.html" class="back-button">← На главную</a>
+        <header class="header">
+            <h1>Лабораторная работа 5</h1>
+            <p>Блочная верстка, позиционирование и макеты</p>
+        </header>
+
+        <main class="grid-container">
+            <a href="lab_5_1.html" class="card">
+                <h2>Задание 5.1 (Меню)</h2>
+                <p>Построение горизонтального меню с использованием свойства float.</p>
+            </a>
+            
+            <a href="lab_5_2_float.html" class="card">
+                <h2>Задание 5.2 (Float)</h2>
+                <p>Трехколоночный макет с помощью обтекания (свойство float) и боковых отступов.</p>
+            </a>
+
+            <a href="lab_5_2_inline.html" class="card">
+                <h2>Задание 5.2 (Inline-block)</h2>
+                <p>Трехколоночный макет с использованием свойства display: inline-block и сброса размера шрифта.</p>
+            </a>
+
+            <a href="lab_5_2_flex.html" class="card">
+                <h2>Задание 5.2 (Flexbox)</h2>
+                <p>Современный подход к верстке колонок с использованием display: flex и flex-grow.</p>
+            </a>
+
+            <a href="lab_5_2_grid.html" class="card">
+                <h2>Задание 5.2 (CSS Grid)</h2>
+                <p>Построение макета на основе сетки с помощью display: grid и grid-template-columns.</p>
+            </a>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 Все права на приколе. Выполнил студент хайповой группы 41ПМ, Баранов Роман</p>
+        </footer>
+    </div>
 </body>
 </html>

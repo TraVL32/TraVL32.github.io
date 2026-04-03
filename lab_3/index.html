@@ -3,10 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>лабораторная работа №3</title>
+    <title>Лабораторная работа 3</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background-color: var(--card-bg);
+            color: var(--primary-color);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+        .back-button:hover {
+            transform: translateX(-5px);
+            border-color: var(--primary-color);
+            color: var(--primary-hover);
+        }
+        .header h1 {
+            font-size: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <a href="lab_3_1.html">Лабораторная работа 3.1</a>
-    <a href="lab_3_2.html">Лабораторная работа 3.2</a>
+    <div class="container">
+        <a href="../index.html" class="back-button">← На главную</a>
+        <header class="header">
+            <h1>Лабораторная работа 3</h1>
+            <p>Оформление веб-страниц с помощью CSS</p>
+        </header>
+
+        <main class="grid-container">
+            <a href="lab_3_1.html" class="card">
+                <h2>Задание 3.1</h2>
+                <p>Базовые стили: настройка цветов, выравнивание текста, использование шрифтов и создание центрированной обертки wrapper.</p>
+            </a>
+            
+            <a href="lab_3_2.html" class="card">
+                <h2>Задание 3.2</h2>
+                <p>Продвинутые стили: подключение Google Fonts, отображение формул через MathJax, бесшовный фон, рамки, фавиконки и сброс стилей через Bootstrap Reboot.</p>
+            </a>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 Все права на приколе. Выполнил студент хайповой группы 41ПМ, Баранов Роман</p>
+        </footer>
+    </div>
 </body>
 </html>
