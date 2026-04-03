@@ -3,12 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Мои Лабораторные Работы</title>
+    <!-- Подключаем наш новый файл стилей -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Подключаем современный шрифт Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a href="lab_2/index.html">Лабораторная работа 2</a>
-    <a href="lab_3/index.html">Лабораторная работа 3</a>
-    <a href="lab_4/index.html">Лабораторная работа 4</a>
-    <a href="lab_5/index.html">Лабораторная работа 5</a>
+    <div class="container">
+        <header class="header">
+            <h1>Лабораторные работы</h1>
+            <p>Курс: Web-программирование (HTML & CSS)</p>
+        </header>
+
+        <main class="grid-container">
+            <a href="#" class="card tempopary_unavailable">
+                <h2>Лабораторная работа 1</h2>
+                <h2>(Временно недоступно :) )</h2>
+                <p>Основные понятия HTML, структура документа, форматирование текста, ссылки и изображения.</p>
+            </a>
+            
+            <a href="lab_2/index.html" class="card">
+                <h2>Лабораторная работа 2</h2>
+                <p>Сложные списки, объединение ячеек в таблицах, фреймы, формы регистрации и встраиваемый контент.</p>
+            </a>
+
+            <a href="lab_3/index.html" class="card">
+                <h2>Лабораторная работа 3</h2>
+                <p>Основы CSS, селекторы, подключение шрифтов, цвета, обертки и оформление текста.</p>
+            </a>
+
+            <a href="lab_4/index.html" class="card">
+                <h2>Лабораторная работа 4</h2>
+                <p>Оформление навигационных меню, работа с псевдоклассами, псевдоэлементами и CSS-спрайтами.</p>
+            </a>
+
+            <a href="lab_5/index.html" class="card">
+                <h2>Лабораторная работа 5</h2>
+                <p>Блочная верстка и позиционирование: устаревшие float/inline-block и современные Flexbox/CSS Grid.</p>
+            </a>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 Все права на приколе. Выполнил студент хайповой группы 41ПМ, Баранов Роман</p>
+        </footer>
+    </div>
 </body>
 </html>
