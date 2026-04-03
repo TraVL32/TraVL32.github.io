@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Встраиваемый контент</title>
+</head>
+
+<body>
+    <figure>
+        <iframe src="https://vkvideo.ru/video_ext.php?oid=-202869502&id=456239024&hash=5d46153b92d6e3c5" width="640" height="360" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+        <figcaption>Презентационный ролик Орловского государственного университета им. И.С. Тургенева</figcaption>
+    </figure>
+
+    <figure>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A992b158140db590181b53e8785b9b7e7a552e1b1d8e1f0e20601d368e7b1bb36&amp;source=constructor" width="640" height="400" frameborder="0"></iframe>
+        <figcaption>Расположение ОГУ им. И.С. Тургенева на карте города Орел</figcaption>
+    </figure>
+
+    <h2>Демонстрация добавления на страницу видео</h2>
+    
+    <figure>
+        <video width="640" height="360" controls poster="poster.jpg">
+            <source src="oreluniver.mp4" type="video/mp4">
+            Ваш браузер не поддерживает встроенные видео.
+        </video>
+        <figcaption>Локальный видеоплеер (файл oreluniver.mp4)</figcaption>
+    </figure>
+
+    <h2>Демонстрация добавления на страницу аудио</h2>
+    
+    <figure>
+        <audio controls>
+            <source src="yuriy-gagarin-poehali.ogg" type="audio/ogg">
+            <source src="yuriy-gagarin-poehali.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает элемент audio.
+        </audio>
+        <figcaption>Голос Юрия Гагарина: "Поехали!"</figcaption>
+    </figure>
+
+    <h2>Демонстрация добавления PDF на страницу</h2>
+    
+    <object data="https://oreluniver.ru/public/file/brendbook/Oreluniver_BrandBook_20190412.pdf" type="application/pdf" width="100%" height="800px">
+        <p>Ваш браузер не поддерживает встроенное отображение PDF-файлов. 
+           Вы можете <a href="https://oreluniver.ru/public/file/brendbook/Oreluniver_BrandBook_20190412.pdf" target="_blank" download>скачать Брендбук ОГУ</a> для просмотра.</p>
+    </object>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблицы</title>
+    <style>
+        table { border-collapse: collapse; margin-bottom: 30px; }
+        td, th { border: 1px solid black; width: 50px; height: 50px; text-align: center; }
+    </style>
+</head>
+<body>
+    <h3>1-я таблица</h3>
+    <table>
+        <tr>
+            <th rowspan="2">1</th>
+            <td colspan="2">2</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <h3>2-я таблица</h3>
+    <table>
+        <tr>
+            <th colspan="2">1</th>
+        </tr>
+        <tr>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <h3>3-я таблица</h3>
+    <table>
+        <tr>
+            <td>1</td>
+            <td rowspan="2">2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td colspan="2">5</td>
+        </tr>
+    </table>
+
+    <h3>4-я таблица</h3>
+    <table>
+        <tr>
+            <th colspan="2">1</th>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td colspan="2">5</td>
+        </tr>
+    </table>
+</body>
+</html>

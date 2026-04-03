@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Использование flexbox</title>
+    <style type="text/css">
+        .wrapper {
+            display: flex;
+        }
+        .wrapper > div {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        #left {
+            background: #ccf; width: 200px; flex-shrink: 0;
+        }
+        #center {
+            background: #cfc; flex-grow: 1;
+        }
+        #right {
+            background: #fcc; width: 200px; flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="left">left<br>left<br>left<br>left<br>left</div>
+        <div id="center">Далеко-далеко за словесными горами в стране гласных...</div>
+        <div id="right">right<br>right<br>right<br>right</div>
+    </div>
+</body>
+</html>
