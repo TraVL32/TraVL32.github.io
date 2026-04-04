@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:wght@400;700&display=swap');
 
 body {
-    background-color: black;
-    color: white;
+    color: #424242;
     font-size: 1.5rem;
     line-height: 2rem;
     background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
