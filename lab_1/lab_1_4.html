@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Изображения</title>
+</head>
+
+<body>
+	<img src="images/aquaria.jpg"><br>
+	<img src="images/slonn.png" alt="Изображение с ошибкой пути"><br>
+	<img src="images/redcat.jpg" width="300" height="400"><br>
+	<img
+    src="images/mushroom.jpg"
+    srcset="
+        images/mushroom.jpg 480w,
+        images/mushroom_landscape.jpg 800w,
+        images/mushroom_retina.jpg 1200w
+    "
+    sizes="
+        (max-width: 480px) 480px,
+        (max-width: 800px) 800px,
+        1200px
+    "
+    alt="Изображение гриба"
+    width="1200"
+    height="800"
+	><br>
+
+	<figure>
+		<img src="images/globus.gif">
+		<figcaption>Глобус</figcaption>
+	</figure><br>
+
+	<picture>
+		<source srcset="images/html5-logo.svg" type="image/svg+xml">
+		<img src="images/html5-logo.png" alt="Логотип HTML5" width="300" height="300">
+	</picture>
+
+	<picture>
+		<source srcset="images/muscle.png" type="image/png">
+		<source srcset="images/muscle.webp" type="image/webp">
+		<img src="images/muscle.png" alt="Изображение muscle" width="500" height="300">
+	</picture>
+
+	<picture>
+		<source srcset="images/light.avif" type="image/avif">
+		<source srcset="images/light.webp" type="image/webp">
+		<img src="images/light.gif" alt="Анимированное изображение light" width="500" height="300">
+	</picture>
+</body>
+
+</html>
